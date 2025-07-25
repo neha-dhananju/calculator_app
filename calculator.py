@@ -3,7 +3,7 @@ import tkinter as tk
 # Step 1: Create the main app window
 root = tk.Tk()
 root.title("Calculator")
-root.geometry("300x400")  # Optional: set window size
+root.geometry("400x450")  # Optional: set window size
 root.resizable(False, False)  # Prevent resizing
 
 # Step 2: Create the entry widget (display box)
@@ -21,6 +21,21 @@ btn_9.grid(row=1 , column=2 ,padx=5,pady=5)
 
 btn_div=tk.Button(root , text="/" , width=5 , height=2 , font=('Arial',16))
 btn_div.grid(row=1 , column=3 ,padx=5,pady=5)
+
+
+# Step 3: Add first row of buttons
+btn_4 = tk.Button(root, text="4", width=5, height=2, font=("Arial", 16))
+btn_4.grid(row=2, column=0, padx=5, pady=5)
+
+btn_5 = tk.Button(root, text="5", width=5, height=2, font=("Arial", 16))
+btn_5.grid(row=2, column=1, padx=5, pady=5)
+
+btn_6 = tk.Button(root, text="6", width=5, height=2, font=("Arial", 16))
+btn_6.grid(row=2, column=2, padx=5, pady=5)
+
+btn_mul = tk.Button(root, text="*", width=5, height=2, font=("Arial", 16))
+btn_mul.grid(row=2, column=3, padx=5, pady=5)
+
 
 # Step 3: Run the main event loop
 root.mainloop()
