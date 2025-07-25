@@ -3,12 +3,12 @@ import tkinter as tk
 # Step 1: Create the main app window
 root = tk.Tk()
 root.title("Calculator")
-root.geometry("400x450")  # Optional: set window size
+root.geometry("380x400")  # Optional: set window size
 root.resizable(False, False)  # Prevent resizing
 
 # Step 2: Create the entry widget (display box)
 entry = tk.Entry(root, font=("Arial", 20), borderwidth=5, relief=tk.RIDGE, justify="right")
-entry.grid(row=0, column=0, columnspan=4, padx=10, pady=10, ipady=10)
+entry.grid(row=0, column=0, columnspan=4, padx=10, pady=10, ipadx=35,ipady=30)
 
 btn_7=tk.Button(root, text="7", width=5, height=2, font=("Arial", 16))
 btn_7.grid(row=1, column=0, padx=5, pady=5)
