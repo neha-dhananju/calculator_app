@@ -36,6 +36,35 @@ btn_6.grid(row=2, column=2, padx=5, pady=5)
 btn_mul = tk.Button(root, text="*", width=5, height=2, font=("Arial", 16))
 btn_mul.grid(row=2, column=3, padx=5, pady=5)
 
+# Step 3: Add first row of buttons
+btn_1 = tk.Button(root, text="1", width=5, height=2, font=("Arial", 16))
+btn_1.grid(row=3, column=0, padx=5, pady=5)
+
+btn_2 = tk.Button(root, text="2", width=5, height=2, font=("Arial", 16))
+btn_2.grid(row=3, column=1, padx=5, pady=5)
+
+btn_3 = tk.Button(root, text="3", width=5, height=2, font=("Arial", 16))
+btn_3.grid(row=3, column=2, padx=5, pady=5)
+
+btn_sub = tk.Button(root, text="-", width=5, height=2, font=("Arial", 16))
+btn_sub.grid(row=3, column=3, padx=5, pady=5)
+
+
+# Step 3: Add first row of buttons
+btn_0 = tk.Button(root, text="0", width=5, height=2, font=("Arial", 16))
+btn_0.grid(row=4, column=0, padx=5, pady=5)
+
+btn_C = tk.Button(root, text="C", width=5, height=2, font=("Arial", 16))
+btn_C.grid(row=4, column=1, padx=5, pady=5)
+
+btn_eq = tk.Button(root, text="=", width=5, height=2, font=("Arial", 16))
+btn_eq.grid(row=4, column=2, padx=5, pady=5)
+
+btn_add = tk.Button(root, text="+", width=5, height=2, font=("Arial", 16))
+btn_add.grid(row=4, column=3, padx=5, pady=5)
+
+
+
 
 # Step 3: Run the main event loop
 root.mainloop()
